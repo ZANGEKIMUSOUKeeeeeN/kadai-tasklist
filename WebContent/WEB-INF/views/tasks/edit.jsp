@@ -11,7 +11,7 @@
 				</form>
 			<p><a href="#" onclick="confirmDestroy();">このタスクを削除する</a></p>
 			<form method="POST" action="${pageContext.request.contextPath}/destroy">
-				<input type="hidden" name="_token" value="${_token}"/>
+				<input type="hidden" name="_token" value="${_token}" />
 			</form>
 			<script>
 				function confirmDestroy(){
@@ -19,8 +19,8 @@
 						document.forms[1].submit();
 					}
 				}
-				<p><a href="${pageContext.request.contextPath}/index">一覧に戻る</a></p>
 			</script>
+			<p><a href="${pageContext.request.contextPath}/index">一覧に戻る</a></p>
 			</c:when>
 			<c:otherwise>
 				<h2>データが見つかりませんでした。</h2>
